@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robotska roka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">Robotska Roka Controls</h1>
+    </header>
+    <main class="main">
+      <div class="card-grid">
+        <div class="card">
+          <h2 class="card-title">Drsnik 14</h2>
+          <div class="slider-container">
+            <input type="range" onchange="updateSlider(this)" id="slider1" class="slider" min="0" max="180" step="1" value="0">
+            <span id="sliderValue1" class="slider-value"></span>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Drsnik 13</h2>
+          <div class="slider-container">
+            <input type="range" onchange="updateSlider(this)"  id="slider2" class="slider" min="0" max="180" step="1" value="0">
+            <span id="sliderValue2" class="slider-value"></span>
+          </div>
+        </div>
+        <div class="card">
+          <h2 class="card-title">Drsnik 12</h2>
+          <div class="slider-container">
+            <input type="range" onchange="updateSlider(this)" id="slider3" class="slider" min="0" max="180" step="1" value="0">
+            <span id="sliderValue3" class="slider-value"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
